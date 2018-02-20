@@ -3,7 +3,7 @@ MAINTAINER Ryan Dowling <ryan.dowling@atlauncher.com>
 
 RUN apt update \
     && apt upgrade -y \
-    && apt add curl ca-certificates openssl git tar bash sqlite \
+    && apt install --no-cache --update curl ca-certificates openssl git tar bash sqlite \
     && adduser -D -h /home/container container
 
 USER container
