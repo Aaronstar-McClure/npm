@@ -4,7 +4,7 @@ MAINTAINER Ryan Dowling <ryan.dowling@atlauncher.com>
 RUN apt update \
     && apt upgrade -y \
     && apt install -y curl ca-certificates openssl git tar bash sqlite \
-    && adduser -D -h /home/container container
+    && adduser -h /home/container container
 
 USER container
 ENV  USER=container HOME=/home/container
