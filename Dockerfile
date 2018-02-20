@@ -1,9 +1,9 @@
 FROM node:8
 MAINTAINER Ryan Dowling <ryan.dowling@atlauncher.com>
 
-RUN apk update \
-    && apk upgrade \
-    && apk add --no-cache --update curl ca-certificates openssl git tar bash sqlite \
+RUN apt update \
+    && apt upgrade \
+    && apt add --no-cache --update curl ca-certificates openssl git tar bash sqlite \
     && adduser -D -h /home/container container
 
 USER container
