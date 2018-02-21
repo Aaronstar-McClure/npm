@@ -1,5 +1,5 @@
 FROM node:8
-MAINTAINER Ryan Dowling <ryan.dowling@atlauncher.com>
+MAINTAINER Aaronstar McClure <Jfeldt19@gmail.com>
 
 RUN apt update \
     && apt upgrade -y \
